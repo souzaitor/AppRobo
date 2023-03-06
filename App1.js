@@ -10,7 +10,7 @@ import GuiaScreen from './screens/GuiaScreen.js';
 const Stack = createStackNavigator();
 const screenWidth = Dimensions.get('window').width;
 const screenHeigh = Dimensions.get('window').height;
-const cardWidth = screenWidth * 0.4; 
+const cardWidth = screenWidth * 0.25; 
 const cardHeight = screenHeigh * 0.4;
 
 
@@ -21,7 +21,6 @@ export default function Main({ navigation }) {
   }, []);
 
   return (
-    <PaperProvider theme={DefaultTheme}>
       <Surface style={{ flex: 1, backgroundColor: '#121212' }}>
         <Appbar.Header style={{ backgroundColor: '#121212' }}>
           <Appbar.Content title="Olá, eu sou o robô do DC, como posso ajudar? " />
@@ -67,18 +66,19 @@ export default function Main({ navigation }) {
             </Card>
         </ScrollView>
       </Surface>
-    </PaperProvider>
   );
 }
 
 function App() {
   return (
-  <NavigationContainer>
-    <Stack.Navigator initialRouteName="Main">
-      <Stack.Screen name="Main" component={Main} options={{ headerShown: true }} />
-      <Stack.Screen name="Guia" component={GuiaScreen} />
-    </Stack.Navigator>
-  </NavigationContainer>
+  <PaperProvider theme={DefaultTheme}>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Main">
+        <Stack.Screen name="Main" component={Main} options={{ headerShown: true }} />
+        <Stack.Screen name="Guia" component={GuiaScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  </PaperProvider>
   );
 }
 
