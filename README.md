@@ -3,6 +3,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/souzaitor/AppRobo?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/souzaitor/AppRobo?style=for-the-badge) 
 ![license](https://img.shields.io/github/license/souzaitor/AppRobo?style=for-the-badge)
+![](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
   <h1 align="center">HostRobotApp</h1>
   
@@ -12,11 +13,9 @@
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
 
+Este repositório contém o projeto de um aplicativo mobile para realizar o controle do robô anfitrião do Departamento de Computação da Universidade Federal de São Carlos (UFSCar) desenvolvido durante a disciplina de Interação Humano-Computador (IHC) durante o período letivo de 2022.2. 
 
 ![Home](https://user-images.githubusercontent.com/39158108/223009394-84d331ab-9933-47c9-817a-8e796fc4ac26.jpg)
-
-
-Este repositório contém o projeto de um aplicativo mobile para realizar o controle do robô anfitrião do Departamento de Computação da Universidade Federal de São Carlos (UFSCar) desenvolvido durante a disciplina de Interação Humano-Computador (IHC) durante o período letivo de 2022.2. 
 
 
 ## 🤖 Pré-requisitos
