@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ScreenOrientation from 'expo-screen-orientation';
-import { AppRegistry, ScrollView, Dimensions, TouchableOpacity, Text} from 'react-native';
+import { AppRegistry, ScrollView, Dimensions, TouchableOpacity, Text, View} from 'react-native';
 import { MD3DarkTheme as DefaultTheme, Provider as PaperProvider, Surface, Appbar, Card, Title, Paragraph } from 'react-native-paper';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -13,7 +13,7 @@ import PapoScreen from './screens/PapoScreen';
 const screenWidth = Dimensions.get('window').width;
 const screenHeight = Dimensions.get('window').height;
 const cardWidth = screenWidth * 0.4; 
-const cardHeight = screenHeight * 0.4;
+const cardHeight = screenHeight * 0.8;
 
 function HomeScreen({ navigation }) {
   
@@ -78,7 +78,14 @@ function HomeScreen({ navigation }) {
   );
 }
 
+// function GuiaScreen() {
+//   return (
+
+//   );
+// }
+
 const Stack = createStackNavigator();
+
 
 export default function App() {
   return (
