@@ -90,12 +90,23 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: '#121212',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+        headerShadowVisible: false
+      }}
+      >
         <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false}} />
-        <Stack.Screen name="Guia" component={GuiaScreen}/>
-        <Stack.Screen name="Mural" component={MuralScreen}/>
-        <Stack.Screen name="Cardápio" component={CardapioScreen}/>
-        <Stack.Screen name="Bate-Papo" component={PapoScreen}/>
+        <Stack.Screen name="Guia" component={GuiaScreen} options={{ title: ''}}/>
+        <Stack.Screen name="Mural" component={MuralScreen} options={{ title: ''}}/>
+        <Stack.Screen name="Cardápio" component={CardapioScreen} options={{ title: ''}}/>
+        <Stack.Screen name="Bate-Papo" component= {PapoScreen} options={{ title: ''}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -106,7 +106,7 @@ export default function PapoScreen({ navigation }) {
 
   return (
     <PaperProvider theme={DefaultTheme}>
-      <Surface style={{ flex: 1, backgroundColor: '#121212' }}>
+      <Surface style={{ flex: 1 }}>
         <Appbar.Header style={{ backgroundColor: '#121212' }}>
           <Appbar.Content title="Bate-Papo" />
         </Appbar.Header>
